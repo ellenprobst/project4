@@ -1,0 +1,15 @@
+@mixin bp($size) {
+  @if $size == 'desktop' {
+    @media all and (max-width: 940px) {
+      @content;
+    }
+  } @else if $size == 'tablet' {
+    @media all and (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == 'mobile' {
+    @media all and (max-width: 480px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Comets and asteroids</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link type="image/png" href="images/favicon-rocket.ico" rel="icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.min.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header__intro">
+				<p>Ever wondered where</p>
+				<h1>Comets and Asteroids</h1>
+				<p>are?</p>
+				<p class="small">Select a planet to see what's flying by!</p>
+			</div>
+			<form action="">
+				<div class="planets">
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Merc" id="mercury">
+						<label  class="label__image" for="mercury"><img src="images/mercury_small.jpg" alt="image of mercury"></label>
+						<label class="label__title" for="mercury">Mercury</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Venus" id="venus">
+						<label class="label__image"	for="venus"><img src="images/venus_small.jpg" alt="image of venus"></label>	
+						<label class="label__title" for="venus">Venus</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Moon" id="moon">
+						<label class="label__image"	for="moon"><img src="images/moon_small.jpg" alt="image of the moon"></label>
+						<label class="label__title" for="moon">Moon</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="earth" id="earth">
+						<label class="label__image"	for="earth"><img src="images/Earth_small.jpg" alt="image of the earth"></label>
+						<label class="label__title" for="earth">Earth</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Mars" id="mars" >
+						<label class="label__image"	for="mars"><img src="images/mars_small.png" alt="image of mars"></label>				<label class="label__title" for="mars">Mars</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Juptr" id="jupiter">
+						<label class="label__image jupiter" for="jupiter"><img src="images/jupiter_small.jpg" alt="image of jupiter"></label>		
+						<label class="label__title" for="jupiter">Jupiter</label>
+					</div>
+					<div class="planets__selection">
+						<input type="radio" name="planet" value="Satrn" id="saturn">
+						<label class="label__image saturn" for="saturn"><img class="rotate" src="images/saturn_small.jpg" alt="image of saturn"></label>				
+						<label class="label__title" for="saturn">Saturn</label>
+					</div>
+				</div> <!-- planets selection -->
+				<div class="planets__submit">
+					<input class="submit" type="submit" value="Select a planet">
+				</div><!-- planets submit -->
+			</form>
+		</div><!-- wrapper -->
+	</header>
+	<main class="hidden">
+		<img class="rock" src="images/rock.png" alt="image of an asteroide">
+		<div class="main__wrapper">
+			<h2></h2>
+			<div class="contentContainer">
+				<div class="asteroids">
+					<h3 class="title">Asteroids</h3>
+					<div class="content" id="asteroids">
+					</div>
+					<p>1 au = distance between the earth and the sun</p>
+				<!-- 	<button class="load_asteroids">Load more</button> -->
+				</div><!--  asteroids -->
+				<div class="comets">
+					<h3 class="title">Comets</h3>
+					<div class="content" id="comets"></div>
+					<p>1 au = distance between the earth and the sun</p>
+					<!-- <button class="load_comets">Load more</button> -->
+				</div> <!-- comets -->
+			</div> <!-- contentContainer -->
+		</div> <!-- main__wrapper -->
+	</main>
+	<footer>
+		<p>&copy;2017 Made by <a href="http://www.ellenprobst.com">Ellen Probst</a>  <i class="fa fa-rocket" aria-hidden="true"></i>  Data and images by <a href="https://www.nasa.gov/">NASA</a></p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+	<script src="script/main.js"></script>
+
+</body>
+</html>
+	
